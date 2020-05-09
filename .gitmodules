@@ -1,0 +1,3 @@
+[submodule "Vendor/SetReplace"]
+	path = Vendor/SetReplace
+	url = https://github.com/maxitg/SetReplace.git

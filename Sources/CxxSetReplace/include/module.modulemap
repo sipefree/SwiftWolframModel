@@ -1,0 +1,4 @@
+module CxxSetReplace {
+    requires cplusplus14
+    header "Set.hpp"
+}
