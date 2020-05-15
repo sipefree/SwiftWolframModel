@@ -13,6 +13,7 @@ import Foundation
 public struct Atom:
     Equatable,
     Hashable,
+    Comparable,
     RawRepresentable,
     ExpressibleByIntegerLiteral,
     CustomStringConvertible
@@ -35,6 +36,10 @@ public struct Atom:
     public var rawValue: Int64
     
     public var description: String { "\(rawValue)" }
+    
+    public static func < (lhs: Atom, rhs: Atom) -> Bool {
+        lhs.rawValue < rhs.rawValue
+    }
     
 }
 
